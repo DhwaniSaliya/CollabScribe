@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "174091207480",
+    "project_id": "collabscribe-3942c",
+    "storage_bucket": "collabscribe-3942c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174091207480:android:9adea9fc4f527505c437cd",
+        "android_client_info": {
+          "package_name": "com.example.collab_scribe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsPhB9zunDNxIgQ24Fxul5c_OWX2tTtvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
