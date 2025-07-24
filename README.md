@@ -1,6 +1,23 @@
-# collab_scribe
+# CollabScribe
 
-A new Flutter project.
+A project made using Flutter and Firebase.
+CollabScribe is a real-time collaborative document editor where users can create, share, and edit documents using just a unique 6-character code. It's perfect for quick collaboration with friends or teammates.
+
+**Features**
+- Create and edit rich-text documents using a powerful Quill editor
+
+- Share documents with others via a 6-letter code
+
+- View and open recently accessed documents
+
+- Toggle public/private visibility (only the owner can change this)
+
+- Share documents with specific users via email
+
+- Real-time presence indicator (see who else is viewing)
+
+-  Only one user's changes are saved at a time
+
 
 ## Getting Started
 
