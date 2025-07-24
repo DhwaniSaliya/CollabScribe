@@ -30,6 +30,7 @@ class _EditorScreenState extends State<EditorScreen> {
   bool _isLoading = true; //show loader till doc loads
   final firestore = FirebaseFirestore.instance;
   bool _isPublic = false;
+  bool _isOwner = false;
 
   StreamSubscription? _presenceSubscription; //for presence updates
   List<Map<String, dynamic>> otherUsersPresence = []; //to tack other active collaborator
@@ -126,6 +127,10 @@ class _EditorScreenState extends State<EditorScreen> {
       _docTitle = data?['title'] ?? 'Untitled'; //set title
       final content = data?['content']; //get doc content
       _isPublic = data?['isPublic'] ?? false; //is it public or not
+
+      final currentUserId = FirebaseAuth.instance.currentUser?.uid;
+      final createdBy = data?['createdBy']; //doing so to not allow non owners of the doc to change privacy settings
+      _isOwner = currentUserId != null && currentUserId == createdBy;
  
       Delta delta;
       try {
@@ -514,15 +519,17 @@ class _EditorScreenState extends State<EditorScreen> {
               );
             },
           ),
-          IconButton(
-            icon: Icon(_isPublic ? Icons.visibility : Icons.visibility_off),
-            onPressed: _togglePublicStatus,
-            tooltip: _isPublic ? 'Make Private' : 'Make Public',
-          ),
-          IconButton(
-            icon: const Icon(Icons.share),
-            onPressed: () => _shareWithEmail(context),
-          ),
+          if(_isOwner)...[
+            IconButton(
+              icon: Icon(_isPublic ? Icons.visibility : Icons.visibility_off),
+              onPressed: _togglePublicStatus,
+              tooltip: _isPublic ? 'Make Private' : 'Make Public',
+            ),
+            IconButton(
+              icon: const Icon(Icons.share),
+              onPressed: () => _shareWithEmail(context),
+            ),
+          ],
         ],
       ),
       body: Column(
