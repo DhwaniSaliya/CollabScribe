@@ -235,7 +235,7 @@ class _EditorScreenState extends State<EditorScreen> {
         .doc(user.uid);
 
     await presenceRef.set({
-      'name': user.displayName ?? user.email ?? 'User',
+      'name': user.email ?? user.displayName ?? 'User',
       'cursorOffset': offset, //stores where the user’s cursor currently is 
       'color': '#${userColor.value.toRadixString(16).padLeft(8, '0')}', //toRadixString(16) converts the color to hex.
       'lastActive': FieldValue.serverTimestamp(), //reccords the time the user was last active
@@ -436,7 +436,7 @@ class _EditorScreenState extends State<EditorScreen> {
       margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       decoration: BoxDecoration(
-        color: Colors.grey.shade100,
+        color: Colors.deepPurple,
         border: Border.all(color: Colors.grey.shade300),
         borderRadius: BorderRadius.circular(20),
       ),
@@ -452,6 +452,7 @@ class _EditorScreenState extends State<EditorScreen> {
                   final name = user['name'] ?? 'User';
                   final colorString = user['color'] ?? '#000000';
                   Color parsedColor = Colors.grey;
+                  print("User name: $name");
                   try {//converting hex string to Color
                     if (colorString.startsWith('#')) {
                       parsedColor = Color(

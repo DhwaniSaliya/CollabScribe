@@ -6,6 +6,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart'; //for ui
 import 'package:firebase_core/firebase_core.dart'; //core firebase initialization
 import 'package:flutter_dotenv/flutter_dotenv.dart'; //for loading environment variables like api keys
+import 'package:flutter_localizations/flutter_localizations.dart';//The flutter_quill package requires localizations to be set up 
+//in the app’s MaterialApp, so it can display proper labels (like for toolbar buttons, formatting options, etc.).
+import 'package:flutter_quill/flutter_quill.dart'; 
 
 void main() async {
   //ensures that flutter is fully initialized before doing any async work
@@ -113,13 +116,13 @@ class _MyAppState extends State<MyApp> {
       // Localization delegates allow Material, Cupertino, and FlutterQuill widgets
       // to display translated text and adapt to locale-specific formatting (like date/time).
       // Even though we only support English now, this ensures correct rendering.
-      // localizationsDelegates: const [
-      //   GlobalMaterialLocalizations.delegate, // Material widgets (SnackBar, Dialog)
-      //   GlobalWidgetsLocalizations.delegate,  //text direction, general localization
-      //   FlutterQuillLocalizations.delegate, //i used flutter_quill so for it, inside editor screen bold/italic and more labels etc
-      //   //are used, so for that we require it
-      // ],
-      // supportedLocales: const [Locale('en')],
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate, // Material widgets (SnackBar, Dialog)
+        GlobalWidgetsLocalizations.delegate,  //text direction, general localization
+        FlutterQuillLocalizations.delegate, //i used flutter_quill so for it, inside editor screen bold/italic and more labels etc
+        //are used, so for that we require it
+      ],
+      supportedLocales: const [Locale('en')],
     );
   }
 }
