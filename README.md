@@ -18,22 +18,33 @@ CollabScribe is a real-time collaborative document editor where users can create
 
 -  Only one user's changes are saved at a time
 
-**Screenshots**
-**User 1**
-<img width="368" height="845" alt="Screenshot 2025-07-24 125322" src="https://github.com/user-attachments/assets/ef13ebe8-15d9-47e9-a417-7e096663ca72" />
+## 🖼️ Screenshots
 
-**User 2**
-![WhatsApp Image 2025-07-24 at 2 21 33 PM](https://github.com/user-attachments/assets/88e2c4d8-f135-4767-abd1-30398fab414f)
-![WhatsApp Image 2025-07-24 at 2 21 33 PM (1)](https://github.com/user-attachments/assets/a3d8793b-9515-47f5-8565-ce5f5a2abd55)
-![WhatsApp Image 2025-07-24 at 2 21 33 PM (2)](https://github.com/user-attachments/assets/ba3848a1-722d-4e0a-a6b5-5f8d0b68e9ca)
-![WhatsApp Image 2025-07-24 at 2 21 34 PM](https://github.com/user-attachments/assets/18a099e6-ece4-4797-94aa-0b5a653235f9)
-![WhatsApp Image 2025-07-24 at 2 21 34 PM (1)](https://github.com/user-attachments/assets/7d741356-7ffa-4aa9-b1d9-625dbcb152ad)
-![WhatsApp Image 2025-07-24 at 2 21 34 PM (2)](https://github.com/user-attachments/assets/9e0ecba9-2cfb-450a-b996-64f90fe8c8f2)
-![WhatsApp Image 2025-07-24 at 2 21 35 PM](https://github.com/user-attachments/assets/92756966-e78a-4583-a67b-2a7ab168e3d1)
-![WhatsApp Image 2025-07-24 at 2 21 35 PM (1)](https://github.com/user-attachments/assets/944e5fe3-e059-49c4-93c9-6317bfa1e348)
-![WhatsApp Image 2025-07-24 at 2 21 36 PM](https://github.com/user-attachments/assets/43329eab-62b8-410c-a94d-a0055c551651)
-![WhatsApp Image 2025-07-24 at 2 21 36 PM (1)](https://github.com/user-attachments/assets/132c7352-fc6f-4c82-93f4-baf5d809ef4b)
-![WhatsApp Image 2025-07-24 at 2 21 36 PM (2)](https://github.com/user-attachments/assets/c8162de3-2aa6-49f2-b905-e61ad8cfe5cc)
+### 👤 User 1
+<img src="https://github.com/user-attachments/assets/ef13ebe8-15d9-47e9-a417-7e096663ca72" width="300"/>
+
+### 👥 User 2
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/88e2c4d8-f135-4767-abd1-30398fab414f" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/a3d8793b-9515-47f5-8565-ce5f5a2abd55" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/ba3848a1-722d-4e0a-a6b5-5f8d0b68e9ca" width="200"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/18a099e6-ece4-4797-94aa-0b5a653235f9" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/7d741356-7ffa-4aa9-b1d9-625dbcb152ad" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/9e0ecba9-2cfb-450a-b996-64f90fe8c8f2" width="200"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/92756966-e78a-4583-a67b-2a7ab168e3d1" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/944e5fe3-e059-49c4-93c9-6317bfa1e348" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/43329eab-62b8-410c-a94d-a0055c551651" width="200"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/132c7352-fc6f-4c82-93f4-baf5d809ef4b" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/c8162de3-2aa6-49f2-b905-e61ad8cfe5cc" width="200"/></td>
+  </tr>
+</table>
 
 
 ## Getting Started
