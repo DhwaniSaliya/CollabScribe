@@ -18,6 +18,8 @@ CollabScribe is a real-time collaborative document editor where users can create
 
 -  Only one user's changes are saved at a time
 
+- Integrated Gemini API to assist users with smart content suggestions, summaries, etc
+
 ## 🖼️ Screenshots
 
 ### 👤 User 1
